@@ -1,0 +1,83 @@
+https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github/
+https://openclassrooms.com/fr/courses/7688581-devenez-un-expert-de-git-et-github/
+https://opensource.guide/fr/
+
+## Git et GitHub sont deux choses différentes.
+
+- Git est un gestionnaire de versions. Vous l’utiliserez pour créer un dépôt local et gérer les versions de vos fichiers.
+- GitHub est un service en ligne qui va héberger votre dépôt. Dans ce cas, on parle de dépôt distant puisqu’il n’est pas stocké sur votre machine.
+
+## GitHub
+
+GitHub est un outil de communication et de collaboration entre plusieurs développeurs (ou toute autre personne qui écrit du texte). C’est une interface web créée pour faciliter l’interaction avec Git.
+L’avantage de GitHub, c’est que depuis quelques années, il est devenu le book/portfolio des développeurs ! Dans beaucoup de processus de recrutement, on vous demandera maintenant votre lien GitHub ! Si ça, c’est pas un argument de taille ! Il permet de mettre en avant la qualité de son code, et ainsi montrer ses capacités et sa plus-value lorsque l’on recherche un emploi. GitHub est considéré comme un véritable réseau social, et permet de contribuer à des projets open source. Il fonctionne par abonnement, mais pas de panique, il y a un abonnement gratuit qui est déjà très bien.
+
+## GitLab
+
+GitLab est la principale alternative à GitHub depuis le rachat de GitHub par Microsoft ! Les anti-Microsoft ont même lancé le hashtag #MovingToGitLab ! GitLab propose une version gratuite hebergée par ses soins ou sur vos propres serveurs. Il existe aussi des versions payantes avec plus d’options.
+
+## Bitbucket
+
+Bitbucket est la version de Atlassian. Elle plaira aux habitués de la gestion de projet sous Atlassian. Bitbucket conviendra aussi bien aux étudiants ou petites équipes qu’aux grands groupes. Une version gratuite est disponible.
+
+## En résumé
+
+- Un dépôt est comme un dossier qui conserve un historique des versions et des modifications d’un projet. Il est essentiel pour travailler en équipe ou collaborer à un projet open source.
+- Un dépôt local est l’endroit où l’on stocke, sur sa machine, une copie d’un projet, ses différentes versions et l’historique des modifications.
+- Un dépôt distant est une version dématérialisée du dépôt local, que ce soit sur Internet ou sur un réseau. Il permet de centraliser le travail des développeurs dans un projet collectif.
+- Il existe plusieurs services en ligne pour héberger un dépôt distant, GitHub étant l’un des plus populaires.
+- Pour démarrer un projet, vous devez créer votre compte GitHub.
+- Vous pouvez suivre vos différents projets facilement grâce au tableau de bord.
+- Pour mettre votre projet sur GitHub, vous devez créer un repository.
+
+## git config --list
+
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=Septenia
+user.email=159175089+Septenia@users.noreply.github.com
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+alias.got=log --oneline --decorate --graph
+
+## Configurer l'éditeur
+
+$ git config --global core.editor notepad++ $ git config
+--global merge.tool vimdiff
+
+- Pour installer Git, vous devez télécharger et configurer Git sur votre ordinateur.
+- Pour initialiser un dépôt Git, vous pouvez soit créer un dépôt local vide, soit cloner un dépôt distant.
+- git init permet d’initialiser un projet Git
+
+## Le Working directory
+
+Cette zone correspond au dossier du projet sur votre ordinateur.
+Souvenez-vous, dans la partie précédente nous avons initialisé le dépôt “PremierProjet”. Eh bien ce dépôt, c’est la zone bleue du schéma.
+
+## Le Stage ou index
+
+Cette zone est un intermédiaire entre le working directory et le repository. Elle représente tous les fichiers modifiés que vous souhaitez voir apparaître dans votre prochaine version de code.
+
+## Le Repository
+
+Lorsque l’on crée de nouvelles versions d’un projet, c’est dans cette zone qu’elles sont stockées.
+Ces 3 zones sont donc présentes dans votre ordinateur, en local.
+En-dessous, vous trouvez le repository GitHub, c’est-à-dire votre dépôt distant.
+
+Le terme “stage” est aussi beaucoup utilisé par les développeurs à la place du terme “index”. On peut dire “indexer un fichier” ou “stage un fichier”.
+
+Depuis le 1er octobre 2020, tous les nouveaux dépôts créés sur GitHub sont appelés “main”, au lieu de “master” comme c’était le cas historiquement. Ce changement de terme a été opéré par la société GitHub afin d’adopter des références plus inclusives. Les dépôts existants, eux, ne changent pas de nom. Vous verrez donc les deux termes dans vos projets.
